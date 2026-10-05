@@ -1,0 +1,17 @@
+name: GitHub Actions Demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: welcome message
+        run: echo "Hello"
+
+      - name: list_files
+        run: ls
