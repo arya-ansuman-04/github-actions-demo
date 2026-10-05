@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: git checkout repo
+        uses: actions/checkout@v4
+
       - name: welcome message
         run: echo "Hello"
 
